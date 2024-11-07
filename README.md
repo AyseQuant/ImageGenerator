@@ -3,6 +3,7 @@ Fluorescent Yeast Cell Image Generator and Segmenter
 This project is a Python application with a graphical user interface (GUI) built using Tkinter. It allows users to generate synthetic images of fluorescent yeast cells, apply segmentation to identify individual cells, and calculate and display properties of each segmented cell. The app is suitable for simulating and analyzing microscopy images in a user-friendly environment.
 
 Features
+
 Generate Synthetic Images: Create 1024x1024 (or custom size) images of fluorescent yeast cells with adjustable parameters.
 Cell Segmentation and Analysis: Segment cells based on thresholding and calculate properties such as centroid, area, orientation, and roundedness.
 User-Friendly Interface: Control image generation and segmentation parameters using an interactive Tkinter interface.
@@ -12,6 +13,7 @@ The first notebook provides the code you can run on your computer
 The second notebook preovides a GUI that allows you to enter specific settings to acquire the synthetic image.
 
 Requirements
+
 Python 3.7+
 Required packages (install using pip):
 numpy
@@ -24,17 +26,22 @@ Setup and Installation
 Clone or Download this repository to your local machine.
 
 Install Dependencies:
+
 pip install numpy pandas matplotlib scipy Pillow scikit-image
 
 
 Run the Application:
+
 python main.py
 
 Usage
+
 Parameters for Image Generation
 Upon launching the application, you will be prompted to enter parameters for generating the synthetic image:
 
-Image Width and Height: Dimensions of the image to be created, typically 1024x1024.
+Image Width and Height: 
+
+Dimensions of the image to be created, typically 1024x1024.
 Number of Cells: The number of yeast cells to generate the image.
 Average Diameter of Cells: Average diameter of each cell in pixels.
 Variance in Diameter: Variability in cell diameter.
@@ -42,17 +49,22 @@ Background Noise Level: Adjusts the level of background noise in the image for a
 Image Generation and Segmentation Steps
 
 Generate Image:
+
 Click Generate Image to create the synthetic yeast cell image based on the specified parameters.
 The generated image will appear on the left side of the interface.
+
 Segment and Analyze:
 
 The segmentation process applies thresholding and erosion to ensure cells are well-separated.
 The segmented image with each cell labeled in a different color will appear on the right side of the interface.
+
 Display Cell Properties:
 
 After segmentation, the application will calculate properties for each cell, including centroid, area, orientation, major and minor axis lengths, eccentricity, perimeter, and mean intensity.
 These properties are stored in a Pandas DataFrame and printed to the console. The roundedness of each cell is calculated to indicate shape circularity.
+
 Code Overview
+
 generate_varied_fluorescent_yeast_image()
 Generates the synthetic yeast cell image. This function uses parameters like cell count, diameter, variance, and noise level to produce an image with randomly placed, fluorescent yeast cells.
 
