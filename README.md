@@ -1,4 +1,5 @@
 Fluorescent Yeast Cell Image Generator and Segmenter
+
 This project is a Python application with a graphical user interface (GUI) built using Tkinter. It allows users to generate synthetic images of fluorescent yeast cells, apply segmentation to identify individual cells, and calculate and display properties of each segmented cell. The app is suitable for simulating and analyzing microscopy images in a user-friendly environment.
 
 Features
